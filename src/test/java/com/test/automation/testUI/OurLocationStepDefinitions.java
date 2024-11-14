@@ -78,76 +78,76 @@ public class OurLocationStepDefinitions {
 
     @Then("user able to view each locations under NewZealand")
     public void userAbleToViewEachLocationsUnderNewZealand() throws InterruptedException {
-//        try {
+        try {
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
 //
-//// Auckland Location
-//            js.executeScript("window.scrollBy(0,300)", "");
-//            String getAucklandDetails = driver.findElement(By.xpath("(//div[contains(@class,'details')])[1]")).getText();
-//            assertTrue(getAucklandDetails.contains("58 Gaunt Street, Auckland CBD, Auckland 1010"));
-//            assertTrue(getAucklandDetails.contains("+64 9 303 1489"));
-//            assertTrue(getAucklandDetails.contains("reception.gaunt@datacom.co.nz"));
-//            sleep(1000);
-//            driver.findElement(By.xpath("(//a[contains(.,'Get directions')])[1]")).click();
-//            String getMapHeader = driver.getTitle();
-//            assertEquals(getMapHeader, "Datacom Auckland - Google Maps");
-//            driver.navigate().back();
-//            sleep(1000);
-//            assertEquals(driver.getTitle(), dataComHeader);
+// Auckland Location
+            js.executeScript("window.scrollBy(0,300)", "");
+            String getAucklandDetails = driver.findElement(By.xpath("(//div[contains(@class,'details')])[1]")).getText();
+            assertTrue(getAucklandDetails.contains("58 Gaunt Street, Auckland CBD, Auckland 1010"));
+            assertTrue(getAucklandDetails.contains("+64 9 303 1489"));
+            assertTrue(getAucklandDetails.contains("reception.gaunt@datacom.co.nz"));
+            sleep(1000);
+            driver.findElement(By.xpath("(//a[contains(.,'Get directions')])[1]")).click();
+            String getMapHeader = driver.getTitle();
+            assertEquals(getMapHeader, "Datacom Auckland - Google Maps");
+            driver.navigate().back();
+            sleep(1000);
+            assertEquals(driver.getTitle(), dataComHeader);
 
 
 // Christchurch Location
-//            js.executeScript("window.scrollBy(0,400)", "");
-//            sleep(2000);
-//            driver.findElement(By.id("section-1")).click();
-//            String getChristchurchDetails = driver.findElement(By.xpath("(//div[contains(@class,'details')])[2]")).getText();
-//            assertTrue(getChristchurchDetails.contains("67 Gloucester Street, Christchurch 8013"));
-//            assertTrue(getChristchurchDetails.contains("+64 3 379 7775"));
-//            assertTrue(getChristchurchDetails.contains("reception.christchurch@datacom.co.nz"));
-//            sleep(1000);
-//            driver.findElement(By.xpath("(//a[contains(.,'Get directions')])[2]")).click();
-//            String getMapChristchurchHeader = driver.getTitle();
-//            assertEquals(getMapChristchurchHeader, "Datacom Christchurch - Google Maps");
-//            driver.navigate().back();
-//            sleep(1000);
-//            assertEquals(driver.getTitle(), dataComHeader);
+            js.executeScript("window.scrollBy(0,400)", "");
+            sleep(2000);
+            driver.findElement(By.id("section-1")).click();
+            String getChristchurchDetails = driver.findElement(By.xpath("(//div[contains(@class,'details')])[2]")).getText();
+            assertTrue(getChristchurchDetails.contains("67 Gloucester Street, Christchurch 8013"));
+            assertTrue(getChristchurchDetails.contains("+64 3 379 7775"));
+            assertTrue(getChristchurchDetails.contains("reception.christchurch@datacom.co.nz"));
+            sleep(1000);
+            driver.findElement(By.xpath("(//a[contains(.,'Get directions')])[2]")).click();
+            String getMapChristchurchHeader = driver.getTitle();
+            assertEquals(getMapChristchurchHeader, "Datacom Christchurch - Google Maps");
+            driver.navigate().back();
+            sleep(1000);
+            assertEquals(driver.getTitle(), dataComHeader);
 
 // Dunedin Location
-//        js.executeScript("window.scrollBy(0,500)", "");
-//        sleep(2000);
-//        driver.findElement(By.id("section-2")).click();
-//        String getDunedinDetails = driver.findElement(By.xpath("(//div[contains(@class,'details')])[3]")).getText();
-//        assertTrue(getDunedinDetails.contains("Level 1, 77 Vogel Street, Dunedin 9011"));
-//        assertTrue(getDunedinDetails.contains("+64 3 379 7775"));
-//        assertTrue(getDunedinDetails.contains("reception.christchurch@datacom.co.nz"));
-//        sleep(1000);
-//        driver.findElement(By.xpath("(//a[contains(.,'Get directions')])[3]")).click();
-//        String getMapDunedinHeader = driver.getTitle();
-//        assertEquals(getMapDunedinHeader, "Level 1/77 Vogel Street - Google Maps");
-//        driver.navigate().back();
-//        sleep(1000);
-//        assertEquals(driver.getTitle(), dataComHeader);
+        js.executeScript("window.scrollBy(0,500)", "");
+        sleep(2000);
+        driver.findElement(By.id("section-2")).click();
+        String getDunedinDetails = driver.findElement(By.xpath("(//div[contains(@class,'details')])[3]")).getText();
+        assertTrue(getDunedinDetails.contains("Level 1, 77 Vogel Street, Dunedin 9011"));
+        assertTrue(getDunedinDetails.contains("+64 3 379 7775"));
+        assertTrue(getDunedinDetails.contains("reception.christchurch@datacom.co.nz"));
+        sleep(1000);
+        driver.findElement(By.xpath("(//a[contains(.,'Get directions')])[3]")).click();
+        String getMapDunedinHeader = driver.getTitle();
+        assertEquals(getMapDunedinHeader, "Level 1/77 Vogel Street - Google Maps");
+        driver.navigate().back();
+        sleep(1000);
+        assertEquals(driver.getTitle(), dataComHeader);
 
 // Hamilton Location
         js.executeScript("window.scrollBy(0,500)", "");
         sleep(2000);
         driver.findElement(By.id("section-3")).click();
-        String getDunedinDetails = driver.findElement(By.xpath("(//div[contains(@class,'details')])[4]")).getText();
-        assertTrue(getDunedinDetails.contains("Level 2, 94 Bryce Street, Hamilton 3204"));
-        assertTrue(getDunedinDetails.contains("+64 7 834 1666"));
-        assertTrue(getDunedinDetails.contains("reception.hamilton@datacom.co.nz"));
+        String getHamiltonDetails = driver.findElement(By.xpath("(//div[contains(@class,'details')])[4]")).getText();
+        assertTrue(getHamiltonDetails.contains("Level 2, 94 Bryce Street, Hamilton 3204"));
+        assertTrue(getHamiltonDetails.contains("+64 7 834 1666"));
+        assertTrue(getHamiltonDetails.contains("reception.hamilton@datacom.co.nz"));
         sleep(1000);
         driver.findElement(By.xpath("(//a[contains(.,'Get directions')])[4]")).click();
-        String getMapDunedinHeader = driver.getTitle();
-        assertEquals(getMapDunedinHeader, "Level 2/94 Bryce Street - Google Maps");
+        String getMapHamiltonHeader = driver.getTitle();
+        assertEquals(getMapHamiltonHeader, "Level 2/94 Bryce Street - Google Maps");
         driver.navigate().back();
         sleep(1000);
         assertEquals(driver.getTitle(), dataComHeader);
 
-//        }catch (NoSuchElementException e){
-//            e.printStackTrace();
-//            fail("No location are present under New Zealand tab");
-//        }
+        }catch (NoSuchElementException e){
+            e.printStackTrace();
+            fail("No location are present under New Zealand tab");
+        }
     }
 }
